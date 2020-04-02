@@ -23,20 +23,52 @@ body {
 
 .btn {
     display: inline-block;
+    font-family: $fontUbuntuBold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: box-shadow .3s;
+    &:hover {
+        box-shadow: none;
+    }
     &--red {
         background-color: #CE1D1B;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
         font-size: 16px;
         line-height: 18px;
         color: #fff;
-        transition: box-shadow .3s;
         padding: 16px 32px;
         &:hover {
-            color: inherit;
-            box-shadow: none;
+            color: #fff;
         }
     }
+    &--download {
+        background-color: #fff;
+        font-size: 15px;
+        line-height: 17px;
+        color: #CE1D1B;
+        padding: 16px 32px 16px 57px;
+        background-image: url(../img/elements/icon-download-red.svg);
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: 32px center;
+        &:hover {
+            color: #CE1D1B;
+        }
+    }
+    &--light {
+        font-size: 15px;
+        line-height: 17px;
+        color: #CE1D1B;
+        background: #FFFFFF;
+        padding: 16px 32px;
+        &:hover {
+            color: #CE1D1B;
+        }
+    }
+    // &--centered {
+    //     position: relative;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    // }
 }
 
 .section-title {
@@ -63,6 +95,14 @@ body {
         color: #fff;
         &::after {
             background-color: #fff;
+        }
+    }
+    &--centered {
+        text-align: center;
+        &::after {
+            // left: 50%;
+            // transform: translateX(-50%);
+            display: none;
         }
     }
 }
