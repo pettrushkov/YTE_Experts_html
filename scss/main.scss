@@ -7,3 +7,62 @@
 @import 'header';
 @import 'home';
 @import 'footer';
+
+body.active, html.active {
+    overflow-y: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $fontUbuntuRegular;
+    overflow-x: hidden;
+}
+
+.btn {
+    display: inline-block;
+    &--red {
+        background-color: #CE1D1B;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        transition: box-shadow .3s;
+        padding: 16px 32px;
+        &:hover {
+            color: inherit;
+            box-shadow: none;
+        }
+    }
+}
+
+.section-title {
+    font-size: 30px;
+    line-height: 34px;
+    font-family: $fontUbuntuBold;
+    color: #000;
+    position: relative;
+    &::after {
+        content: " ";
+        display: block;
+        width: 95px;
+        height: 4px;
+        background-color: #CE1D1B;
+        border-radius: 5px;
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+    }
+    span {
+        color: #CE1D1B;
+    }
+    &--light {
+        color: #fff;
+        &::after {
+            background-color: #fff;
+        }
+    }
+}

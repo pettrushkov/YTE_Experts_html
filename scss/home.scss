@@ -1,0 +1,11 @@
+.guide {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    &--overlay {
+        background: linear-gradient(98.49deg, #CE1D1B 0%, #BB1B1A 100%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 30px 40px 30px 180px;
+    }
+}

@@ -15,7 +15,7 @@ a {
         text-decoration: none;
     }
     &:focus {
-        box-shadow: none !important;
+        box-shadow: none;
     }
 }
 
@@ -41,4 +41,9 @@ body {
     &.overflow-active {
         overflow: hidden;
     }
+}
+
+.btn { // bootstrap grid styles
+    padding: 0;
+    border: none;
 }
