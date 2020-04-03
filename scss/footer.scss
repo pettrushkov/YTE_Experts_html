@@ -1,0 +1,138 @@
+.footer {
+    position: relative;
+    background-color: #E7E9F3;
+    padding-top: 73px;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/elements/bg-footer-before.svg);
+        position: absolute;
+        top: -79px;
+        left: 0;
+    }
+    &__copyright {
+        margin-top: 60px;
+        background: linear-gradient(90deg, #BB1B1A 0%, #CE1D1B 49.85%, #BB1B1A 100%);
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../img/elements/bg-copyright-before.svg);
+            position: absolute;
+            top: -39px;
+            left: 0;
+        }
+    }
+    &__email, &__phone {
+        font-size: 18px;
+        line-height: 21px;
+        display: block;
+        padding-left: 29px;
+        background-repeat: no-repeat;
+        background-position: left 1px;
+        background-size: 21px;
+        &:hover {
+            color: #CE1D1B;
+        }
+    }
+    &__email {
+        margin-top: 40px;
+        background-image: url(../img/content/icon-mail-dark.svg);
+        &:hover {
+            background-image: url(../img/content/icon-mail-red.svg);            
+        }
+    }
+    &__phone {
+        margin-top: 20px;
+        background-image: url(../img/content/icon-phone-dark.svg);
+        &:hover {
+            background-image: url(../img/content/icon-phone-red.svg);
+        }
+    }
+    &__social {
+        margin-top: 40px;
+        display: flex;
+        li {
+            &:not(:first-child) {
+                margin-left: 30px;
+            }
+            a {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+                &.instagram {
+                    background-image: url(../img/content/Instagram.svg);
+                    &:hover {
+                        background-image: url(../img/content/Instagram-red.svg);
+                    }
+                }
+                &.linkedin {
+                    background-image: url(../img/content/Linkedin.svg);
+                    &:hover {
+                        background-image: url(../img/content/Linkedin-red.svg);
+                    }
+                }
+                &.facebook {
+                    background-image: url(../img/content/Fcaebook.svg);
+                    &:hover {
+                        background-image: url(../img/content/Fcaebook-red.svg);
+                    }
+                }
+            }
+        }
+    }
+    &__submenu {
+        p {
+            font-family: $fontUbuntuMedium;
+            font-size: 22px;
+            line-height: 25px;
+            color: #CE1D1B;
+        }
+        ul {
+            margin-top: 30px;
+            padding-left: 23px;
+            position: relative;
+            &::before {
+                content: " ";
+                display: block;
+                width: 3px;
+                height: 100%;
+                background-color: #CE1D1B;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            li {
+                &:not(:first-child) {
+                    margin-top: 22px;
+                }
+                a {
+                    font-size: 18px;
+                    line-height: 21px;
+                    &:hover {
+                        color: #CE1D1B;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        padding: 30px 0;
+        div[class^="col-"]:nth-child(2) {
+            text-align: right;
+        }
+    }
+}

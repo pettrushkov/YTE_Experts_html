@@ -7,5 +7,12 @@ jQuery(document).ready(function($) {
         nextArrow: $('.reviews__slider-buttons-next')
    });
 
+   $('.clients__slider').slick({
+      dots: false,
+      slidesToShow: 6,
+      prevArrow: $('.clients__slider-prev'),
+      nextArrow: $('.clients__slider-next')
+ });
+
 });
 
