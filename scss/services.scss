@@ -30,6 +30,10 @@
             }
             .row {
                 flex-direction: row-reverse;
+                div[class^="col-"]:first-child img {
+                    display: block;
+                    margin-left: auto;
+                }
             }
             .section-title {
                 color: #000;

@@ -1,40 +1,67 @@
-.footer {
+.contact {
+    padding: 98px 0 97px;
     position: relative;
-    background-color: #E7E9F3;
-    padding-top: 73px;
+    background-color: #f0f1f8;
+    .section-title {
+        color: #ce1d1b;
+    }
     &::before {
-        content: "";
+        content: " ";
         display: block;
         width: 100%;
-        height: 80px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../img/elements/bg-footer-before.svg);
+        height: 426px;
+        background: linear-gradient(270deg, #E7E9F3 0%, #E7E9F3 100%);
         position: absolute;
-        top: -79px;
+        bottom: 0;
         left: 0;
     }
-    &__logo {
-        display: block;
-        max-width: 218px;
-        max-height: 60px;
+    &__description {
+        margin-top: 44px;
+        p {
+            font-family: $fontUbuntuLight;
+            font-size: 18px;
+            line-height: 23px;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+            strong {
+                font-family: $fontUbuntuMedium;
+            }
+            span {
+                color: #CE1D1B;
+            }
+        }
     }
-    &__copyright {
-        margin-top: 60px;
-        background: linear-gradient(90deg, #BB1B1A 0%, #CE1D1B 49.85%, #BB1B1A 100%);
+    .btn {
+        margin-top: 20px;
+    }
+    &__block {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 98px 54px 99px;
+        max-width: 510px;
+        min-height: 504px;
         position: relative;
+        z-index: 1;
+        margin-left: auto;
         &::before {
-            content: "";
+            content: " ";
             display: block;
             width: 100%;
-            height: 40px;
-            background-size: contain;
+            height: 100%;
             background-repeat: no-repeat;
-            background-image: url(../img/elements/bg-copyright-before.svg);
+            background-size: contain;
+            background-image: url(../img/elements/bg-contact-before.svg);
+            background-position: right bottom;
             position: absolute;
-            top: -39px;
-            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
         }
+    }
+    &__logo {
+        text-align: center;
     }
     &__email, &__phone {
         font-size: 18px;
@@ -49,7 +76,7 @@
         }
     }
     &__email {
-        margin-top: 40px;
+        margin-top: 60px;
         background-image: url(../img/content/icon-mail-dark.svg);
         &:hover {
             background-image: url(../img/content/icon-mail-red.svg);            
@@ -63,8 +90,9 @@
         }
     }
     &__social {
-        margin-top: 40px;
+        margin-top: 60px;
         display: flex;
+        justify-content: center;
         li {
             &:not(:first-child) {
                 margin-left: 30px;
@@ -93,51 +121,6 @@
                     }
                 }
             }
-        }
-    }
-    &__submenu {
-        p {
-            font-family: $fontUbuntuMedium;
-            font-size: 22px;
-            line-height: 25px;
-            color: #CE1D1B;
-        }
-        ul {
-            margin-top: 30px;
-            padding-left: 23px;
-            position: relative;
-            &::before {
-                content: " ";
-                display: block;
-                width: 3px;
-                height: 100%;
-                background-color: #CE1D1B;
-                border-radius: 5px;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            li {
-                &:not(:first-child) {
-                    margin-top: 22px;
-                }
-                a {
-                    font-size: 18px;
-                    line-height: 21px;
-                    &:hover {
-                        color: #CE1D1B;
-                    }
-                }
-            }
-        }
-    }
-    &__copyright {
-        font-size: 18px;
-        line-height: 21px;
-        color: #fff;
-        padding: 30px 0;
-        div[class^="col-"]:nth-child(2) {
-            text-align: right;
         }
     }
 }
