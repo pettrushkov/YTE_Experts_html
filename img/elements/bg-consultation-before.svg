@@ -2,7 +2,7 @@
 <g clip-path="url(#clip0)">
 <path d="M0 0C0 0 405 80 960 80C1515 80 1920 0 1920 0V90H0V0Z" fill="url(#paint0_linear)"/>
 <path d="M0 40C0 40 405 90 960 90C1515 90 1920 40 1920 40V90H0V40Z" fill="url(#paint1_linear)"/>
-<path d="M0 40C0 40 405 90 960 90C1515 90 1920 40 1920 40V90H0V40Z" fill="url(#paint2_linear)"/>
+<path d="M0 40.0001C0 40.0001 405 90.0001 960 90.0001C1515 90.0001 1920 40.0001 1920 40.0001V90.0001H0V40.0001Z" fill="url(#paint2_linear)"/>
 </g>
 <defs>
 <linearGradient id="paint0_linear" x1="9.22837e-06" y1="244" x2="1920" y2="244" gradientUnits="userSpaceOnUse">
