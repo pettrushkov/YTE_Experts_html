@@ -14,5 +14,45 @@ jQuery(document).ready(function($) {
       nextArrow: $('.clients__slider-next')
  });
 
+
+// --- MOVING DIV UNDER MENU ---
+ var nav = $(".header__menu--overlay"),
+    slideLine = $("#slide-line"),
+    currentItem = $(".header__menu li.active");
+
+$(function(){  
+  // Menu has active item
+  if ($(currentItem[0])) {
+    slideLine.css({
+      "width": (currentItem.width() - 40),
+      "left": (currentItem.position().left + 20)
+    });
+  }
+  
+  // Underline transition
+  $(nav).find("li").hover(
+    // Hover on
+    function(){
+      slideLine.css({
+        "width": ($(this).width() - 40),
+        "left": ($(this).position().left + 20)
+      });
+    },
+    // Hover out
+    function(){
+      if (currentItem[0]) {
+        // Go back to current
+        slideLine.css({
+          "width": (currentItem.width() - 40),
+          "left": (currentItem.position().left + 20)
+        });
+      } else {
+        // Disapear
+        slideLine.width(0);
+      }
+    }
+   );
+});
+
 });
 
