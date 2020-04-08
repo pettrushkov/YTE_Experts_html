@@ -54,5 +54,14 @@ $(function(){
    );
 });
 
+$(window).scroll(function () {
+     if ($(this).scrollTop() > 0) {
+         $('.header__row').addClass('scrolled');
+     } else {
+         $('.header__row').removeClass('scrolled');
+     }
+ });
+
+
 });
 
