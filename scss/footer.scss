@@ -2,6 +2,9 @@
     position: relative;
     background-color: #E7E9F3;
     padding-top: 73px;
+    @include mediaw(576px) {
+        padding-top: 60px;
+    }
     &::before {
         content: "";
         display: block;
@@ -13,11 +16,20 @@
         position: absolute;
         top: -79px;
         left: 0;
+        @include mediaw(1919px) {
+            background-size: contain;
+            background-position: center bottom;
+        }
     }
     &__logo {
         display: block;
-        max-width: 218px;
-        max-height: 60px;
+        @include mediaw(576px) {
+            text-align: center;
+        }
+        img {
+            max-width: 218px;
+            max-height: 60px;
+        }
     }
     &__copyright {
         margin-top: 60px;
@@ -31,6 +43,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url(../img/elements/bg-copyright-before.svg);
+            background-position: center bottom;
             position: absolute;
             top: -39px;
             left: 0;
@@ -44,6 +57,11 @@
         background-repeat: no-repeat;
         background-position: left 1px;
         background-size: 21px;
+        @include mediaw(576px) {
+            font-size: 16px;
+            line-height: 20px;
+            background-size: 20px;
+        }
         &:hover {
             color: #CE1D1B;
         }
@@ -51,6 +69,9 @@
     &__email {
         margin-top: 40px;
         background-image: url(../img/content/icon-mail-dark.svg);
+        @include mediaw(576px) {
+            margin-top: 30px;
+        }
         &:hover {
             background-image: url(../img/content/icon-mail-red.svg);            
         }
@@ -58,6 +79,9 @@
     &__phone {
         margin-top: 20px;
         background-image: url(../img/content/icon-phone-dark.svg);
+        @include mediaw(576px) {
+            margin-top: 10px;
+        }
         &:hover {
             background-image: url(../img/content/icon-phone-red.svg);
         }
@@ -65,6 +89,12 @@
     &__social {
         margin-top: 40px;
         display: flex;
+        @include mediaw(991px) {
+            margin-bottom: 30px;
+        }
+        @include mediaw(576px) {
+            margin: 20px 0 30px;
+        }
         li {
             &:not(:first-child) {
                 margin-left: 30px;
@@ -96,6 +126,11 @@
         }
     }
     &__submenu {
+        &:nth-child(2) {
+            @include mediaw(576px) {
+                margin-top: 30px;
+            }
+        }
         p {
             font-family: $fontUbuntuMedium;
             font-size: 22px;
@@ -136,8 +171,17 @@
         line-height: 21px;
         color: #fff;
         padding: 30px 0;
+        @include mediaw(576px) {
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 20px;
+        }
         div[class^="col-"]:nth-child(2) {
             text-align: right;
+            @include mediaw(991px) {
+                text-align: initial;
+                margin-top: 20px;
+            }
         }
     }
 }

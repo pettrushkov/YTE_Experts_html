@@ -4,12 +4,17 @@
     &.home {
         min-height: 709px;
         padding: 100px 0 50px;
+        @include mediaw(576px) {
+            min-height: initial;
+            padding: 100px 0 0;
+        }
         .header__row {
             background-color: transparent;
         }
     }
     &__row {
         position: fixed;
+        z-index: 12;
         top: 0;
         left: 0;
         width: 100%;
@@ -26,10 +31,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .btn {
+                @include mediaw(991px) {
+                    display: none;
+                }
+            }
         }
     }
     &__menu--overlay {
         position: relative;
+        @include mediaw(991px) {
+            display: none;
+        }
         #slide-line{
             position: absolute;
             left: 0;
@@ -57,21 +70,87 @@
             }
         }
     }
+    &__menu-mobile {
+        display: block;
+        position: fixed;
+        z-index: 777;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #252635;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform .3s;
+        padding: 100px 30px 150px;
+        ul {
+            li {
+                a {    
+                    display: block;
+                    padding: 5px 0;
+                }
+            }
+        }
+        .btn {
+            position: absolute;
+            bottom: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 230px;
+            @include mediaw(991px) {
+                display: inline-block !important;
+            }
+        }
+        &.active {
+            transform: translateX(0);
+        }
+    }
     &__content {
         padding-top: 165px;
         background-repeat: no-repeat;
         background-image: url(../img/elements/bg-header.png);
         background-position: center 100px;
+        @include mediaw(1919px) {
+            padding-top: 55px;
+        }
+        @include mediaw(576px) {
+            padding-top: 0;
+            background-position: center 73px;
+        }
+        div[class^="col-"]:nth-child(2) {
+            @include mediaw(1919px) {
+                padding-top: 80px;
+            }
+            @include mediaw(576px) {
+                padding-top: 0;
+                margin-top: 20px;
+            }
+        }
         img {
             max-width: initial;
+            @include mediaw(991px) {
+                max-width: calc(100% + 97px);
+            }
+            @include mediaw(576px) {
+                position: relative;
+                left: -15px;
+            }
         }
     }
     &__title {
         margin-top: 43px;
+        @include mediaw(576px) {
+            margin-top: 20px;
+        }
     }
     &__description {
         margin-top: 44px;
         font-size: 18px;
         line-height: 23px;
+        @include mediaw(576px) {
+            margin-top: 34px;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }
