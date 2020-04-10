@@ -2,6 +2,9 @@
     padding: 98px 0 97px;
     position: relative;
     background-color: #f0f1f8;
+    @include mediaw(576px) {
+        padding: 50px 0 64px;
+    }
     .section-title {
         color: #ce1d1b;
     }
@@ -17,6 +20,9 @@
     }
     &__description {
         margin-top: 44px;
+        @include mediaw(576px) {
+            margin-top: 34px;
+        }
         p {
             font-family: $fontUbuntuLight;
             font-size: 18px;
@@ -34,6 +40,9 @@
     }
     .btn {
         margin-top: 20px;
+        @include mediaw(576px) {
+            margin-top: 10px;
+        }
     }
     &__block {
         background: #FFFFFF;

@@ -86,11 +86,27 @@ body {
         background-image: url(../img/elements/icon-arrow-back.svg);
         background-position: 35px center;
         padding: 16px 32px 16px 57px;
+        @include mediaw(576px) {
+            padding: 16px 25px 16px 50px;
+            background-position: 27px center;
+        }
+        @include mediaw(374px) {
+            padding: 16px 10px 16px 25px;
+            background-position: 10px center;
+        }
     }
     &--forward {
         background-image: url(../img/elements/icon-arrow-forward.svg);
         background-position: calc(100% - 35px) center;
         padding: 16px 57px 16px 32px;
+        @include mediaw(576px) {
+            padding: 16px 50px 16px 25px;
+            background-position: calc(100% - 27px) center;
+        }
+        @include mediaw(374px) {
+            padding: 16px 25px 16px 10px;
+            background-position: calc(100% - 10px) center;
+        }
     }
 }
 

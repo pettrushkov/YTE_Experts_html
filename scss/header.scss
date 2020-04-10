@@ -78,24 +78,19 @@
         width: 100%;
         height: 100%;
         background-color: #252635;
-        text-align: center;
         transform: translateX(100%);
         transition: transform .3s;
-        padding: 100px 30px 150px;
+        padding: 110px 30px 150px;
         ul {
             li {
                 a {    
                     display: block;
-                    padding: 5px 0;
+                    padding: 15px 0;
                 }
             }
         }
         .btn {
-            position: absolute;
-            bottom: 75px;
-            left: 50%;
-            transform: translateX(-50%);
-            min-width: 230px;
+            margin-top: 15px;
             @include mediaw(991px) {
                 display: inline-block !important;
             }
@@ -103,6 +98,10 @@
         &.active {
             transform: translateX(0);
         }
+    }
+    &__logo {
+        position: relative;
+        z-index: 1234;
     }
     &__content {
         padding-top: 165px;

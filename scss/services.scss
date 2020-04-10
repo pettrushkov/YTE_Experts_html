@@ -3,6 +3,9 @@
         background: linear-gradient(270deg, #BB1B1A 0%, #BB1B1A 100%);
         padding: 175px 0 30px;
         position: relative;
+        @include mediaw(576px) {
+            padding: 85px 0 50px;
+        }
         &::before {
             content: " ";
             display: block;
@@ -14,12 +17,23 @@
             background-image: url(../img/elements/bg-service-before2.svg);
             background-size: contain;
             background-repeat: no-repeat;
+            @include mediaw(375px) {
+                background-image: url(../img/elements/bg-service-before2-mobile.svg);
+                height: 335px;
+            }
         }
         &:first-child {
             padding: 100px 0 30px;
+            @include mediaw(576px) {
+                padding: 60px 0 30px;
+            }
             &::before {
                 height: 339px;
                 background-image: url(../img/elements/bg-service-before.svg);
+                @include mediaw(375px) {
+                    background-image: url(../img/elements/bg-service-before-mobile.svg);
+                    height: 316px;
+                }
             }
         }
         &:nth-child(2n) {
@@ -27,6 +41,10 @@
             &::before {
                 height: 389px;
                 background-image: url(../img/elements/bg-service-before-light.svg);
+                @include mediaw(375px) {
+                    background-image: url(../img/elements/bg-service-before-light-mobile.svg);
+                    height: 336px;
+                }
             }
             .row {
                 flex-direction: row-reverse;
@@ -48,8 +66,19 @@
         .row {
             align-items: center;
         }
+        img {
+            @include mediaw(576px) {
+                padding: 0 35px;
+            }
+            @include mediaw(350px) {
+                padding: 0 20px;
+            }
+        }
         .section-title {
             color: #fff;
+            @include mediaw(767px) {
+                margin-top: 40px;
+            }
             &::after {
                 background-color: #fff;
             }
@@ -59,6 +88,10 @@
             font-size: 18px;
             line-height: 23px;
             color: #fff;
+            @include mediaw(576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 }

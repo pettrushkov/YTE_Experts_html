@@ -606,8 +606,8 @@
         justify-content: flex-end;
         position: relative;
         z-index: 2;
-        @include mediaw(767px) {
-            display: none;
+        @include mediaw(576px) {
+            margin-top: 5px;
         }
         div {
             background-color: #fff;
@@ -735,8 +735,10 @@
         top: -90px;
         right: 0;
         display: flex;
-        @include mediaw(767px) {
-            display: none;
+        @include mediaw(576px) {
+            margin-bottom: 15px;
+            position: initial;
+            justify-content: flex-end;
         }
         div {
             background-color: #fff;
