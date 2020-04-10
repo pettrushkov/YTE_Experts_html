@@ -42,6 +42,16 @@
     padding: 206px 0 81px;
     color: #fff;
     background: linear-gradient(90deg, #F0F1F8 0.05%, #E7E9F3 49.97%, #F0F1F8 100.05%);
+    @include mediaw(1300px) {
+        padding: 100px 0 81px;
+    }
+    @include mediaw(768px) {
+        padding: 50px 0 80px;
+    }
+    @include mediaw(576px) {
+        padding: 70px 0 50px;
+        background: linear-gradient(90deg, #CE1D1B 0%, #BB1B1A 50.52%, #CE1D1B 100%);
+    }
     &::before {
         content: " ";
         display: block;
@@ -53,6 +63,17 @@
         background-image: url(../img/elements/bg-whatwedo-before.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        @include mediaw(1919px) {
+            background-size: contain;
+        }
+        @include mediaw(768px) {
+            background-size: cover;
+            background-position-x: center;
+            height: 290px;
+        }
+        @include mediaw(576px) {
+            height: 320px;
+        }
     }
     .container {
         position: relative;
@@ -63,6 +84,12 @@
     }
     .row {
         margin-top: 119px;
+        @include mediaw(991px) {
+            margin-top: 90px;
+        }
+        @include mediaw(576px) {
+            margin-top: 85px;
+        }
     }
     &__item {
         background: #FFFFFF;
@@ -71,6 +98,13 @@
         padding: 60px 30px;
         text-align: center;
         color: #000;
+        @include mediaw(991px) {
+            margin-top: 30px;
+        }
+        @include mediaw(576px) {
+            margin-top: 15px;
+            padding: 50px 28px;
+        }
         .icon {
             background: #CE1D1B;
             box-shadow: 0px 5px 50px rgba(206, 29, 27, 0.5);
@@ -87,6 +121,9 @@
             font-size: 18px;
             line-height: 21px;
             margin-top: 40px;
+            @include mediaw(576px) {
+                margin-top: 30px;
+            }
         }
         .description {
             font-size: 16px;
@@ -96,15 +133,22 @@
     }
 }
 
-.why.clients {
+.why-page.clients {
     background: linear-gradient(90deg, #F0F1F8 0.05%, #E7E9F3 49.97%, #F0F1F8 100.05%);
+    @include mediaw(576px) {
+        padding: 66px 0 50px;
+    }
     &::before {
         background-image: url(../img/elements/bg-why-clients-before.svg);
         height: 210px;
+        @include mediaw(576px) {
+            background-image: url(../img/elements/bg-clients-before-mobile.svg);
+            background-position-x: center
+        }
     }
 }
 
-.why.reviews {
+.why-page.reviews {
     position: relative;
     &::before {
         content: " ";

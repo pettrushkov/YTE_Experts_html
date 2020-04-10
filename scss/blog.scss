@@ -2,6 +2,9 @@
     padding: 175px 0;
     position: relative;
     background: linear-gradient(270deg, #E7E9F3 0%, #E7E9F3 100%);
+    @include mediaw(991px) {
+        padding: 0 0 50px;
+    }
     &::before {
         content: " ";
         display: block;
@@ -9,17 +12,35 @@
         height: 331px;
         position: absolute;
         top: -1px;
-        left: 0;
+        right: 0;
         background-image: url(../img/elements/bg-what-we-do-before.svg);
         background-size: contain;
         background-repeat: no-repeat;
+        @include mediaw(1919px) {
+            width: 1920px;
+        }
+        @include mediaw(576px) {
+            height: 400px;
+            background-size: cover;
+        }
     }
     .row {
         align-items: center;
-        div[class^="col-"] img {
-            display: block;
-            margin-left: auto;
+        @include mediaw(991px) {
+            flex-direction: column-reverse;
         }
+        div[class^="col-"]:nth-child(2) {
+            @include mediaw(991px) {
+                margin: 70px 0;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                @include mediaw(991px) {
+                    margin: 0 auto;
+                }
+            }
+        } 
     }
     &__description {
         margin-top: 44px;
@@ -27,6 +48,10 @@
             font-family: $fontUbuntuLight;
             font-size: 18px;
             line-height: 23px;
+            @include mediaw(576px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
             &:not(:first-child) {
                 margin-top: 20px;
             }
@@ -44,6 +69,12 @@
     background: #F0F1F8;
     position: relative;
     padding: 211px 0 140px;
+    @include mediaw(767px) {
+        padding: 100px 75px;
+    }
+    @include mediaw(576px) {
+        padding: 49px 0 50px;
+    }
     &::before {
         content: " ";
         display: block;
@@ -69,10 +100,16 @@
     }
     &:not(:first-child) {
         margin-top: 30px;
+        @include mediaw(576px) {
+            margin-top: 20px;
+        }
     }
     .row {
         div[class^="col-"]:nth-child(2) > div {
             padding: 30px 30px 30px 0;
+            @include mediaw(991px) {
+                padding: 20px 15px 15px;
+            }
         }
     }
     .image-preview {
@@ -82,16 +119,30 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            @include mediaw(991px) {
+                height: 250px;
+                border-radius: 5px 5px 0 0;
+            }
         }
     }
     .description {
         margin: 44px 0 30px;
         font-size: 18px;
         line-height: 23px;
+        @include mediaw(576px) {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 34px 0 20px;
+        }
     }
     .date {
         margin-top: 20px;
         font-size: 16px;
         line-height: 18px;
+        @include mediaw(576px) {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }

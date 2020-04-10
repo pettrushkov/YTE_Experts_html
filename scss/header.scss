@@ -3,13 +3,13 @@
     color: #fff;
     &.home {
         min-height: 709px;
-        padding: 100px 0 50px;
+        padding: 0 0 50px;
         @include mediaw(576px) {
             min-height: initial;
-            padding: 100px 0 0;
+            padding: 0;
         }
         .header__row {
-            background-color: transparent;
+            background: #252635;
         }
     }
     &__row {
@@ -23,7 +23,6 @@
         padding: 20px 0;
         transition: background-color .3s, padding .3s;
         &.scrolled {
-            background-color: #252635 !important;
             padding: 5px 0;
             z-index: 11;
         }

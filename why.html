@@ -13,25 +13,40 @@
 <body>
 
     <header class="header">
+        
         <div class="header__row">
             <div class="container">
                 <a href="#" class="header__logo"><img src="./img/content/logo.svg" alt=""></a>
-                <menu class="header__menu">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Why YTE?</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </menu>
+                <div class="header__menu--overlay">
+                    <menu class="header__menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li class="active"><a href="#">Why YTE?</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </menu>
+                    <span id="slide-line"></span>
+                </div>
+                <div class="header__menu-mobile">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Why YTE?</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <a href="#" class="btn btn--red">Free Consultation</a>
+                    </ul>
+                </div>
+                <div class="menu-btn"><span></span></div>
                 <a href="#" class="btn btn--red">Free Consultation</a>
             </div>
         </div>
     </header>
     
-    <section class="why">
+    <section class="blog">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <h2 class="section-title">We Are Your Trusted Transportation Marketing Guide</h2>
                     <div class="why__description">
                         <p><strong>We <span>Know</span> You Are <span>Looking For A Marketing Partner</span> To Yield <span>A High Return</span> On Investment For <span>Your Transportation Company</span>.</strong></p>
@@ -39,7 +54,7 @@
                         <p>Whether You Are A Carrier Looking To Hire More Drivers, A Truck Dealership Looking To Sell More Trucks, A Truck Repair Shop Looking To Do More Business With Carriers, Or A Trailer Dealership Looking To Sell More Trucks Then The Search For A Marketing Partner Stops Now.</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <img src="./img/content/Why-YTE-1.png" alt="">
                 </div>
             </div>
@@ -51,21 +66,21 @@
             <h2 class="section-title section-title--centered section-title--light">What Do We Do?</h2>
             <p class="what-we-do__description">Our Custom Tailored Marketing Solutions & Strategies Are Unique To Your Transportation Company To Yield The Highest Return On Investment. Every Transportation Company Is Different & Should Be Treated As Such.</p>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="what-we-do__item">
                         <div class="icon"><img src="./img/content/icon-filter.svg" alt=""></div>
                         <p class="title">Lead Generation</p>
                         <p class="description">Whether You Are Looking For More Drivers As A Carrier, Are Looking For More Sales As A Truck Or Trailer Dealership, Or Are Looking To Do Business With More Carriers To Drive Business To Your Truck & Repair Shop, Your Search For A Marketing Partner Stops Now!</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="what-we-do__item">
                         <div class="icon"><img src="./img/content/icon-up.svg" alt=""></div>
                         <p class="title">Increase Your Conversions</p>
                         <p class="description">Driving Lots Of Traffic To Your Transportation Company Is Super Important. But If That Traffic Does Not Convert Then The Efforts Put Into That Traffic Really Yield No Use To Your Transportation Company. Let Us Help You Increase Your Conversions So Your Traffic Could Lead To More Revenue!</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="what-we-do__item">
                         <div class="icon"><img src="./img/content/icon-todo.svg" alt=""></div>
                         <p class="title">Improving Your Retention</p>
@@ -77,7 +92,7 @@
         </div>
     </section>
 
-    <section class="clients why">
+    <section class="clients why-page">
         <div class="container">
             <h2 class="section-title section-title--centered">Some Clients We’ve Helped</h2>
             <div class="clients__slider--overlay">
@@ -127,13 +142,13 @@
         </div>
     </section>
 
-    <section class="reviews why">
+    <section class="reviews why-page">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3">
                     <h2 class="section-title">What Clients Say About US</h2>
                 </div>
-                <div class="col-9 reviews__description">
+                <div class="col-lg-9 reviews__description">
                     <p>Our Client Base And Their Results Are Our Best Proof That Our Strategies, Methodologies, & Marketing Systems Work.</p>
                     <p>We Love Working With Transportation Companies Who Like To Think Outside The Box, Are Constantly On The Newest Trends & Technologies, Can Adapt Quickly To Change & Are Looking To Scale & Grow Their Companies.</p>
                 </div>
@@ -148,7 +163,7 @@
                                 <p>Carrier</p>
                             </div>
                         </div>
-                        <div class="reviews__slider-text">
+                        <div class="reviews__slide-text">
                             "Modestas & his team at Your Transportation Experts really helped us out in terms of very creative ideas, strategies, and tips to attract more drivers to Nova Lines as well as offer a fresh and different perspective on driver retention/recruiting. He is willing to go the extra mile to help his clients see success in their driver recruiting/retention efforts. You and your team's help is much appreciated!". 
                         </div>
                         <p class="author">-Mihai S</p>
@@ -161,7 +176,7 @@
                                 <p>Trailer Dealership</p>
                             </div>
                         </div>
-                        <div class="reviews__slider-text">
+                        <div class="reviews__slide-text">
                             "Modestas & his team at Your Transportation Experts really helped us out in terms of very creative marketing ideas that have yielded in a direct correlation of much more inquiries for us at Midwest Utility for our trailers. In a span of about 1 week, we have gotten 7 trailer inquiries that we are currently in the process of doing business with here in the very near future thanks to Modestas & his team at Your Transportation Experts".
                         </div>
                         <p class="author">-William W</p>
@@ -174,7 +189,7 @@
                                 <p>Carrier</p>
                             </div>
                         </div>
-                        <div class="reviews__slider-text">
+                        <div class="reviews__slide-text">
                             "Modestas & his team at Your Transportation Experts really helped us out in terms of very creative ideas, strategies, and tips to attract more drivers to Nova Lines as well as offer a fresh and different perspective on driver retention/recruiting. He is willing to go the extra mile to help his clients see success in their driver recruiting/retention efforts. You and your team's help is much appreciated!". 
                         </div>
                         <p class="author">-Mihai S</p>
@@ -187,7 +202,7 @@
                                 <p>Trailer Dealership</p>
                             </div>
                         </div>
-                        <div class="reviews__slider-text">
+                        <div class="reviews__slide-text">
                             "Modestas & his team at Your Transportation Experts really helped us out in terms of very creative marketing ideas that have yielded in a direct correlation of much more inquiries for us at Midwest Utility for our trailers. In a span of about 1 week, we have gotten 7 trailer inquiries that we are currently in the process of doing business with here in the very near future thanks to Modestas & his team at Your Transportation Experts".
                         </div>
                         <p class="author">-William W</p>
@@ -204,10 +219,10 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <h2 class="section-title section-title--light">About us</h2>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <p class="about__description">We Are A Results-Based Transportation Marketing Agency That Helps Transportation Companies Grow Their Bottom Line & Helps Them Attract More Business Through Our Custom Tailored Results Driven Marketing Systems Designed To Get Your Transportation Company Closer To Their Goals!</p>
                 </div>
             </div>
@@ -217,7 +232,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <a href="#" class="footer__logo"><img src="./img/content/logo-dark.svg" alt=""></a>
                     <a href="mailto:Modestas@YourTransportationExperts.Com" class="footer__email">- Modestas@YourTransportationExperts.Com</a>
                     <a href="tel:7089793772" class="footer__phone">- 708-979-3772</a>
@@ -227,9 +242,9 @@
                         <li><a href="#" class="facebook"></a></li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-6 footer__submenu">
+                        <div class="col-sm-6 footer__submenu">
                             <p>Quick links</p>
                             <ul>
                                 <li><a href="#">Home</a></li>
@@ -239,7 +254,7 @@
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col-6 footer__submenu">
+                        <div class="col-sm-6 footer__submenu">
                             <p>Services</p>
                             <ul>
                                 <li><a href="#">Lead Generation</a></li>
@@ -255,10 +270,10 @@
         <div class="footer__copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <p>Privacy Policy | DMCA</p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <p>Copyright © 2020 YT Experts. All Rights Reserved.</p>
                     </div>
                 </div>

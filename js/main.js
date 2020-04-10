@@ -84,9 +84,11 @@ jQuery(document).ready(function($) {
 
      $(window).scroll(function () {
           if ($(this).scrollTop() > 0) {
-          $('.header__row').addClass('scrolled');
+               $('.header__row').addClass('scrolled');
+               $('body').addClass('scrolled');
           } else {
-          $('.header__row').removeClass('scrolled');
+               $('.header__row').removeClass('scrolled');
+               $('body').removeClass('scrolled');
           }
      });
 

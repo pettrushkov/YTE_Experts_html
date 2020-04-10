@@ -24,6 +24,14 @@ html {
 body {
     font-family: $fontUbuntuRegular;
     overflow-x: hidden;
+    padding-top: 100px;
+    transition: padding .3s;
+    // @include mediaw(991px) {
+    //     padding-top: 70px;
+    // }
+    &.scrolled {
+        padding-top: 70px;
+    }
 }
 
 .btn {
