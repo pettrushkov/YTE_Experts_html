@@ -405,6 +405,46 @@
         @include mediaw(1919px) {
             background-size: contain;
         }
+        @include mediaw(1600px) {
+            background-size: cover;
+            bottom: -20px;
+            height: 70px;
+        }
+        @include mediaw(1599px) {
+            background-size: contain;
+        }
+        @include mediaw(1536px) {
+            background-size: cover;
+            bottom: -15px;
+            height: 67px;
+        }
+        @include mediaw(1535px) {
+            background-size: contain;
+        }
+        @include mediaw(1024px) {
+            background-size: cover;
+            bottom: 5px;
+            height: 45px;
+        }
+        @include mediaw(1023px) {
+            background-size: contain;
+        }
+        @include mediaw(768px) {
+            background-size: cover;
+            bottom: 16px;
+            height: 34px;
+        }
+        @include mediaw(767px) {
+            background-size: contain;
+        }
+        @include mediaw(375px) {
+            background-size: cover;
+            bottom: 33px;
+            height: 17px;
+        }
+        @include mediaw(374px) {
+            background-size: contain;
+        }
     }
     &--overlay {
         position: relative;
@@ -710,6 +750,32 @@
         position: absolute;
         top: -1px;
         left: 0;
+        @include mediaw(1360px) {
+            background-size: cover;
+            height: 36px;
+            top: 0;
+        }
+        @include mediaw(1359px) {
+            background-size: contain;
+        }
+        @include mediaw(1280px) {
+            background-size: cover;
+            height: 34px;
+        }
+        @include mediaw(1279px) {
+            background-size: contain;
+        }
+        @include mediaw(360px) {
+            background-size: cover;
+            height: 10px;
+        }
+        @include mediaw(359px) {
+            background-size: contain;
+        }
+        @include mediaw(320px) {
+            background-size: cover;
+            height: 9px;
+        }
     }
     &__slider--overlay {
         margin-top: 60px;

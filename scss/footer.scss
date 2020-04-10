@@ -20,6 +20,27 @@
             background-size: contain;
             background-position: center bottom;
         }
+        @include mediaw(1280px) {
+            background-size: cover;
+            height: 54px;
+            top: -54px;
+        }
+        @include mediaw(1279px) {
+            background-size: contain;
+        }
+        @include mediaw(800px) {
+            background-size: cover;
+            height: 34px;
+            top: -34px;
+        }
+        @include mediaw(799px) {
+            background-size: contain;
+        }
+        @include mediaw(320px) {
+            background-size: cover;
+            height: 14px;
+            top: -14px;
+        }
     }
     &__logo {
         display: block;
@@ -47,6 +68,37 @@
             position: absolute;
             top: -39px;
             left: 0;
+            @include mediaw(1600px) {
+                background-size: cover;
+                height: 34px;
+                top: -33px;
+            }
+            @include mediaw(1599px) {
+                background-size: contain;
+            }
+            @include mediaw(1366px) {
+                background-size: cover;
+                height: 29px;
+                top: -29px;
+            }
+            @include mediaw(1365px) {
+                background-size: contain;
+            }
+            @include mediaw(1360px) {
+                background-size: cover;
+                top: -28px;
+            }
+            @include mediaw(1359px) {
+                background-size: contain;
+            }
+            @include mediaw(1024px) {
+                background-size: cover;
+                height: 22px;
+                top: -22px;
+            }
+            @include mediaw(1023px) {
+                background-size: contain;
+            }
         }
     }
     &__email, &__phone {
@@ -79,9 +131,6 @@
     &__phone {
         margin-top: 20px;
         background-image: url(../img/content/icon-phone-dark.svg);
-        @include mediaw(576px) {
-            margin-top: 10px;
-        }
         &:hover {
             background-image: url(../img/content/icon-phone-red.svg);
         }
