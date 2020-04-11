@@ -24,26 +24,26 @@
             background-size: cover;
             height: 79px;
         }
-        @include mediaw(1678px) {
+        @include mediaw(1659px) {
             background-size: contain;
         }
         @include mediaw(1536px) {
             background-size: cover;
             height: 79px;
         }
-        @include mediaw(1535px) {
+        @include mediaw(1515px) {
             background-size: contain;
         }
         @include mediaw(1440px) {
             background-size: cover;
         }
-        @include mediaw(1439px) {
+        @include mediaw(1419px) {
             background-size: contain;
         }
         @include mediaw(1366px) {
             background-size: cover;
         }
-        @include mediaw(1365px) {
+        @include mediaw(1345px) {
             background-size: contain;
         }
         @include mediaw(1280px) {
@@ -51,7 +51,7 @@
             height: 54px;
             top: -54px;
         }
-        @include mediaw(1279px) {
+        @include mediaw(1259px) {
             background-size: contain;
         }
         @include mediaw(800px) {
@@ -59,7 +59,7 @@
             height: 34px;
             top: -34px;
         }
-        @include mediaw(799px) {
+        @include mediaw(779px) {
             background-size: contain;
         }
         @include mediaw(411px) {
@@ -70,7 +70,7 @@
             height: 15px;
             top: -15px;
         }
-        @include mediaw(359px) {
+        @include mediaw(339px) {
             background-size: contain;
         }
         @include mediaw(320px) {
@@ -110,7 +110,7 @@
                 height: 34px;
                 top: -33px;
             }
-            @include mediaw(1599px) {
+            @include mediaw(1579px) {
                 background-size: contain;
             }
             @include mediaw(1366px) {
@@ -118,14 +118,14 @@
                 height: 29px;
                 top: -28px;
             }
-            @include mediaw(1365px) {
+            @include mediaw(1345px) {
                 background-size: contain;
             }
             @include mediaw(1360px) {
                 background-size: cover;
                 top: -28px;
             }
-            @include mediaw(1359px) {
+            @include mediaw(1339px) {
                 background-size: contain;
             }
             @include mediaw(1280px) {
@@ -133,7 +133,7 @@
                 height: 27px;
                 top: -27px;
             }
-            @include mediaw(1279px) {
+            @include mediaw(1259px) {
                 background-size: contain;
             }
             @include mediaw(1024px) {
@@ -149,7 +149,7 @@
                 height: 17px;
                 top: -17px;
             }
-            @include mediaw(799px) {
+            @include mediaw(779px) {
                 background-size: contain;
             }
             @include mediaw(768px) {
@@ -160,7 +160,7 @@
                 height: 9px;
                 top: -9px;
             }
-            @include mediaw(410px) {
+            @include mediaw(390px) {
                 background-size: contain;
             }
             @include mediaw(375px) {
@@ -168,13 +168,13 @@
                 height: 8px;
                 top: -8px;
             }
-            @include mediaw(373px) {
+            @include mediaw(354px) {
                 background-size: contain;
             }
             @include mediaw(360px) {
                 background-size: cover;
             }
-            @include mediaw(359px) {
+            @include mediaw(339px) {
                 background-size: contain;
             }
             @include mediaw(320px) {
