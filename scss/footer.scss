@@ -13,6 +13,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(../img/elements/bg-footer-before.svg);
+        background-position-x: center;
         position: absolute;
         top: -79px;
         left: 0;
@@ -88,8 +89,8 @@
         }
         @include mediaw(411px) {
             background-size: cover;
-            top: -17px;
-            height: 17px;
+            top: -18px;
+            height: 18px;
         }
         @include mediaw(390px) {
             background-size: contain;
