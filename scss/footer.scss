@@ -165,6 +165,14 @@
             @include mediaw(1259px) {
                 background-size: contain;
             }
+            @include mediaw(1112px) {
+                background-size: cover;
+                height: 23px;
+                top: -22px;
+            }
+            @include mediaw(1091px) {
+                background-size: contain;
+            }
             @include mediaw(1024px) {
                 background-size: cover;
                 height: 22px;

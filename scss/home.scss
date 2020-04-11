@@ -405,9 +405,9 @@
             height: 56px;
             top: 17px;
         }
-        @include mediaw(1100px) {
-            height: 51px;
-            top: 22px;
+        @include mediaw(1112px) {
+            height: 52px;
+            top: 21px;
         }
         @include mediaw(1000px) {
             height: 47px;
@@ -488,7 +488,15 @@
         @include mediaw(1360px) {
             background-size: cover;
         }
-        @include mediaw(1349px) {
+        @include mediaw(1339px) {
+            background-size: contain;
+        }
+        @include mediaw(1112px) {
+            background-size: cover;
+            height: 48px;
+            bottom: 2px;
+        }
+        @include mediaw(1091px) {
             background-size: contain;
         }
         @include mediaw(1024px) {
@@ -917,7 +925,7 @@
         }
         @include mediaw(320px) {
             background-size: cover;
-            height: 9px;
+            height: 8px;
         }
     }
     &__slider--overlay {
