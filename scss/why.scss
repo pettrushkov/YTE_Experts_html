@@ -62,13 +62,12 @@
         left: 0;
         background-image: url(../img/elements/bg-whatwedo-before.svg);
         background-size: cover;
-        background-repeat: no-repeat;
-        @include mediaw(1919px) {
-            background-size: contain;
+        background-repeat: no-repeat; 
+        @include mediaw(1680px) {
+            height: 622px;
+            background-position-x: center;
         }
         @include mediaw(768px) {
-            background-size: cover;
-            background-position-x: center;
             height: 290px;
         }
         @include mediaw(576px) {
@@ -141,9 +140,12 @@
     &::before {
         background-image: url(../img/elements/bg-why-clients-before.svg);
         height: 210px;
+        background-position-x: center;
         @include mediaw(576px) {
             background-image: url(../img/elements/bg-clients-before-mobile.svg);
-            background-position-x: center
+        }
+        @include mediaw(411px) {
+            height: 17px;
         }
     }
 }

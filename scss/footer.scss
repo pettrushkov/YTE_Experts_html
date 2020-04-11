@@ -27,6 +27,14 @@
         @include mediaw(1659px) {
             background-size: contain;
         }
+        @include mediaw(1600px) {
+            background-size: cover;
+            height: 67px;
+            top: -67px;
+        }
+        @include mediaw(1579px) {
+            background-size: contain;
+        }
         @include mediaw(1536px) {
             background-size: cover;
             height: 79px;
@@ -54,6 +62,14 @@
         @include mediaw(1259px) {
             background-size: contain;
         }
+        @include mediaw(1024px) {
+            background-size: cover;
+            height: 43px;
+            top: -43px;
+        }
+        @include mediaw(1003px) {
+            background-size: contain;
+        }
         @include mediaw(800px) {
             background-size: cover;
             height: 34px;
@@ -62,8 +78,21 @@
         @include mediaw(779px) {
             background-size: contain;
         }
+        @include mediaw(768px) {
+            background-size: cover;
+            height: 32px;
+            top: -32px;
+        }
+        @include mediaw(747px) {
+            background-size: contain;
+        }
         @include mediaw(411px) {
-            top: -33px;
+            background-size: cover;
+            top: -17px;
+            height: 17px;
+        }
+        @include mediaw(390px) {
+            background-size: contain;
         }
         @include mediaw(360px) {
             background-size: cover;
