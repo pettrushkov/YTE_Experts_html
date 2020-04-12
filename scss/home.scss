@@ -378,6 +378,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(../img/elements/bg-consultation-before.svg);
+        background-position-x: center;
         position: absolute;
         top: -17px;
         left: 0;
@@ -388,6 +389,10 @@
         @include mediaw(1600px) {
             height: 75px;
             top: -2px;
+        }
+        @include mediaw(1536px) {
+          height: 71px;
+          top: 2px;
         }
         @include mediaw(1500px) {
             height: 70px;
