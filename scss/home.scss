@@ -382,6 +382,10 @@
         position: absolute;
         top: -17px;
         left: 0;
+        @include mediaw(1680px) {
+            top: -5px;
+            height: 78px;
+        }
         @include mediaw(1650px) {
             height: 78px;
             top: -5px;
@@ -398,25 +402,25 @@
             height: 70px;
             top: 3px;
         }
-        @include mediaw(1400px) {
-            height: 65px;
-            top: 8px;
+        @include mediaw(1440px) {
+          height: 66px;
+          top: 7px;
         }
-        @include mediaw(1300px) {
-            height: 62px;
-            top: 11px;
+        @include mediaw(1366px) {
+          height: 63px;
+          top: 10px;
         }
-        @include mediaw(1200px) {
-            height: 56px;
-            top: 17px;
+        @include mediaw(1280px) {
+          height: 59px;
+          top: 14px;
         }
         @include mediaw(1112px) {
-            height: 52px;
-            top: 21px;
+          height: 51px;
+          top: 22px;
         }
-        @include mediaw(1000px) {
-            height: 47px;
-            top: 26px;
+        @include mediaw(1024px) {
+          height: 47px;
+          top: 26px;
         }
         @include mediaw(900px) {
             height: 42px;
@@ -426,9 +430,9 @@
             height: 37px;
             top: 36px;
         }
-        @include mediaw(700px) {
-            height: 33px;
-            top: 40px;
+        @include mediaw(768px) {
+          height: 35px;
+          top: 38px;
         }
         @include mediaw(600px) {
             height: 28px;
@@ -438,18 +442,22 @@
             height: 23px;
             top: 50px;
         }
-        @include mediaw(400px) {
-            height: 19px;
-            top: 54px;
+        @include mediaw(411px) {
+          height: 18px;
+          top: 55px;
         }
         @include mediaw(375px) {
             height: 18px;
             top: 55px;
             background-image: url(../img/elements/bg-consultation-before-mobile.svg);
         }
-        @include mediaw(350px) {
-            height: 17px;
-            top: 57px;
+        @include mediaw(360px) {
+          height: 16px;
+          top: 57px;
+        }
+        @include mediaw(320px) {
+          height: 14px;
+          top: 59px;
         }
     }
     &::after {
